@@ -88,9 +88,9 @@ nav{
 }
 
 .off_menu .grid {
-    margin-top: -1em;
+    margin-top: -0.5em;
     display: grid;
-    grid-template-columns: 12em 4.5em;
+    grid-template-columns: 12em 3.5em;
     grid-column-gap: 2em;
 }
 
@@ -122,9 +122,9 @@ nav{
 
 
 .off_links{
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 3em;
+	font-size: 14px;
+    font-weight: 600;
+    line-height: 2em;
 }
 
 .hamburger {
@@ -331,9 +331,9 @@ footer{
 
 @media screen and (min-width: 350px ){
 	.off_menu .grid {
-	    margin-top: -1em;
+	    margin-top: -0.5em;
 	    display: grid;
-	    grid-template-columns: 12em 4.5em;
+	    grid-template-columns: 12em 3.5em;
 	    grid-column-gap: 3.5em;
 	}
 
@@ -349,9 +349,8 @@ footer{
 
 @media screen and (min-width: 376px ){
 	.off_menu .grid {
-	    margin-top: -1em;
 	    display: grid;
-	    grid-template-columns: 12em 4.5em;
+	    grid-template-columns: 12em 3.5em;
 	    grid-column-gap: 5em;
 	}
 
@@ -412,9 +411,8 @@ footer{
 	}
 
 	.off_menu .grid {
-	    margin-top: -1em;
 	    display: grid;
-	    grid-template-columns: 17em 4.5em;
+	    grid-template-columns: 17em 3.5em;
 	    grid-column-gap: 3em;
 	}
 
@@ -424,7 +422,7 @@ footer{
 
 	.off_links a {
     	font-size: 18px;
-    	line-height: 4em;
+    	line-height: 2em;
 	}
 
 
@@ -610,6 +608,35 @@ footer{
 		margin-right: 2.5em;
 		width: 250px;
 	}
+
+	.section_1 h3{
+	font-style: italic;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 151px;
+	line-height: 0px;
+	text-align: unset;
+
+}
+.section_1 i{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+
+.section_1 h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 186px;
+	line-height: 10px;
+}
+
+.section_1 h2{
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+	font-size: 186px;
+	line-height: 0px;
+}
 
 	.project_mobile h1{
 		font-size: 110px;
