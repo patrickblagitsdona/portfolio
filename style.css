@@ -146,6 +146,7 @@ nav{
   display: block;
   background: white;
   height: 3px;
+  width: 2em;
   margin-bottom: 7px;
   transition: all 0.3s;
 }
