@@ -331,11 +331,17 @@ section{
     line-height: 2em;
 }
 
-.next{
+/*.next{
 	width: 65vw;
     margin-top: 7em;
     margin-bottom: 3em;
 }
+
+.prior{
+/*	width: 65vw;
+    margin-top: 7em;
+    margin-bottom: 3em;*/
+
 
 .mini_info h1{
 	font-size: 17vw;
@@ -377,7 +383,7 @@ section{
 
 .about_me .grid {
 	display: grid;
-	grid-template-columns: 9.8em 4em;
+	grid-template-columns: 0em 9.8em;
 	grid-column-gap: 3em;
 }
 
@@ -471,6 +477,35 @@ section{
     line-height: 25px;
 }
 
+	.me{
+		display: none;
+	}
+/*------------------------------Prior & Next Button---------------------------------------*/
+	.next{
+		width: 60vw;
+	}
+
+	.prior{
+		width: 60vw;
+		margin-bottom: 0.5em;
+	}
+
+	.prior:hover{
+		transform: scale(1.1);
+		
+	}
+	.next:hover{
+		transform: scale(1.1);
+	}
+
+	.p-buttons {
+    margin-top: 7em;
+    margin-left: 1em;
+	}
+
+	.p_info h1{
+		font-size: 6vw;
+	}
 /*----------------------------Email----------------------------*/
 
 .email{
@@ -490,8 +525,8 @@ footer{
 
 	.about_me .grid {
 	    display: grid;
-	    grid-template-columns: 92vw 0em;
-	    grid-column-gap: 3em;
+	    grid-template-columns: 0em 91vw;
+	    grid-column-gap: 0em;
 }
 /*----------------------------media sizes----------------------------*/
 
@@ -503,11 +538,6 @@ footer{
 	    grid-column-gap: 3.5em;
 	}
 
-	.about_me .grid {
-	    display: grid;
-	    grid-template-columns: 92vw 0em;
-	    grid-column-gap: 3em;
-}
 
 /*-----------------------------------------------376px--------------------------------------------------*/
 
@@ -556,7 +586,7 @@ footer{
 	
 	.about_me .grid {
 	    display: grid;
-	    grid-template-columns: 48vw 0em;
+	    grid-template-columns: 0em 48vw;
 	    grid-column-gap: 2em;
 	}
 
@@ -578,11 +608,49 @@ footer{
 		font-size: 9vw;
 	}
 
+	.me{
+		display: none;
+	}
+/*------------------*/
+
+}
+/*------------------------------Prior & Next Button---------------------------------------*/
+@media screen and (min-width: 500px) {
+	.next{
+		width: 40vw;
+	}
+
+	.prior{
+		width: 40vw;
+		margin-right: 2em;
+		margin-bottom: 0em;
+	}
+
+		/*------------------------GRID------------------*/
+
+	.about_me .grid {
+		display: grid;
+		grid-template-columns: 37vw 50vw;
+	    grid-column-gap: 0vw;
+	}
+	.about_me p{
+		font-size: 2.5vw;
+	}
+
+	.me{
+		display: block;
+		width: 45vw;
+		filter: grayscale(145%) brightness(0.85);
+	}
+
+	.col1 {
+    z-index: -1;
+	}
+	/*------------------*/
 
 }
 
-
-/*-----------------------------------------------988px--------------------------------------------------*/
+/*-----------------------------------------------975px--------------------------------------------------*/
 
 
 @media screen and (min-width: 975px) {
@@ -723,13 +791,22 @@ footer{
 	.mini_info h3{
 		font-size: 7vw;
 	}
+	/*------------------------GRID------------------*/
 
 	.about_me .grid {
 		display: grid;
-	    grid-template-columns: 40vw 0em;
+	    grid-template-columns: 17em 31vw;
 	    grid-column-gap: 0vw;
 	}
 
+	.me{
+		width: 21em;
+	}
+
+	.col1 {
+    z-index: -1;
+	}
+/*------------------*/
 	.about_me p{
 		font-size: 1.8vw;
 	}
@@ -766,18 +843,21 @@ footer{
 		filter: saturate(90%);
 	}
 
-	.next{
-		width: 40vw;
-	    margin-top: 7em;
-	    margin-bottom: 3em;
-	}
-
-	.p_info h1{
-		font-size: 6vw;
-	}
 	.link-group-contact{
 		display: none;
 	}
+
+	.next{
+		width: 18.35em;
+	}
+
+	.prior{
+		width: 18.35em;
+		margin-right: 3em;
+		margin-bottom: 0em;
+	}
+
+}
 
 	footer{
 		font-size: 14px;
@@ -845,6 +925,17 @@ footer{
 	.about_me {
     	margin-top: -200px;
 	}
+
+	.about_me .grid {
+		display: grid;
+	    grid-template-columns: 29vw 31vw;
+	    grid-column-gap: 0vw;
+	}
+
+	.me{
+		width: 33vw;
+	}
+
 
 }
 
