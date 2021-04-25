@@ -1,3 +1,30 @@
+// COLLAPSE ABOUT
+if (document.querySelector('.home') && document.querySelector('.right') && document.querySelector('#about')) {
+	function debounce(func, wait, immediate) {
+		let timeout
+		return function() {
+			let context = this, args = arguments
+			let later = function() {
+				timeout = null
+				if (!immediate) func.apply(context, args)
+			}
+		var callNow = immediate && !timeout
+		clearTimeout(timeout)
+		timeout = setTimeout(later, wait)
+		if (callNow) func.apply(context, args)
+	}
+}
+let about = document.querySelector('#about').offsetTop
+let right = document.querySelector('.right')
+let aboutScrollWatcher = debounce(function() {
+	if (window.pageYOffset >= about) {
+		right.classList.add('collapse-about')
+	} else if (window.pageYOffset < about) {
+		right.classList.remove('collapse-about')
+	}
+}, 250)
+window.addEventListener('scroll', aboutScrollWatcher)
+}
 
 // Loader
 if (document.querySelector('.transition')) {
@@ -17,7 +44,7 @@ if (document.querySelector('.transition')) {
 
 // // Smooth scroll to on page anchors with specified selector
 
-function anchorscroll(speed = 0.5, selector = '.anchorscroll', offset = 30) {
+function anchorscroll(speed = 0.1025, selector = '.anchorscroll', offset = 30) {
 
   // Request animation frame prefixes and fallback
   window.raf = (function() {
