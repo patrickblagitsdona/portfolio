@@ -480,6 +480,12 @@ section{
 	.me{
 		display: none;
 	}
+
+		.mini_info1 {
+	    display: grid;
+	    grid-template-columns: 90vw;
+	    margin-top: -20vw;
+	}
 /*------------------------------Prior & Next Button---------------------------------------*/
 	.next{
 		width: 60vw;
@@ -487,7 +493,7 @@ section{
 
 	.prior{
 		width: 60vw;
-		margin-bottom: 0.5em;
+		margin-bottom: 1.5em;
 	}
 
 	.prior:hover{
@@ -503,8 +509,10 @@ section{
     margin-left: 1em;
 	}
 
-	.p_info h1{
-		font-size: 6vw;
+	.p_info h1 {
+    font-size: 6vw;
+     margin-bottom: 1.5em; 
+}
 	}
 /*----------------------------Email----------------------------*/
 
@@ -537,6 +545,8 @@ footer{
 	    grid-template-columns: 12em 3.5em;
 	    grid-column-gap: 3.5em;
 	}
+
+}
 
 
 /*-----------------------------------------------376px--------------------------------------------------*/
@@ -586,8 +596,8 @@ footer{
 	
 	.about_me .grid {
 	    display: grid;
-	    grid-template-columns: 0em 48vw;
-	    grid-column-gap: 2em;
+	    grid-template-columns: 0em 91vw;
+	    grid-column-gap: 0em;
 	}
 
 
@@ -608,6 +618,13 @@ footer{
 		font-size: 9vw;
 	}
 
+	.mini_info1 {
+	    display: grid;
+	    grid-template-columns: 22em;
+	    margin-top: -20vw;
+
+	}
+
 	.me{
 		display: none;
 	}
@@ -624,6 +641,10 @@ footer{
 		width: 40vw;
 		margin-right: 2em;
 		margin-bottom: 0em;
+	}
+
+	.mini_info1{
+		font-size: 1.25em;
 	}
 
 		/*------------------------GRID------------------*/
@@ -648,6 +669,13 @@ footer{
 	}
 	/*------------------*/
 
+}
+
+
+
+.p_info h1 {
+    font-size: 6vw;
+    /* margin-bottom: 1.5em; */
 }
 
 /*-----------------------------------------------975px--------------------------------------------------*/
@@ -806,6 +834,12 @@ footer{
 	.col1 {
     z-index: -1;
 	}
+
+	.mini-info1 .grid {
+    display: grid;
+    grid-template-columns: 17em;
+    margin-top: -7em;
+}
 /*------------------*/
 	.about_me p{
 		font-size: 1.8vw;
