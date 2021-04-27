@@ -277,7 +277,9 @@ section{
 
 .banners{
 	margin-top: -1em;
+    margin-right: .5em;
 }
+
 
 .banners a {
     overflow: hidden;
@@ -292,6 +294,11 @@ section{
 
 .p_banner{
 	width: 100%;
+
+}
+
+.pbanners {
+    margin-right: .5em;
 }
 
 .h_banner{
@@ -301,6 +308,10 @@ section{
 
 .h_banner:hover {
     transform: scale(1.1);
+}
+
+video{
+	?
 }
 
 
@@ -477,49 +488,68 @@ section{
     line-height: 25px;
 }
 
-	.me{
-		display: none;
-	}
-
-		.mini_info1 {
-	    display: grid;
-	    grid-template-columns: 90vw;
-	    margin-top: -20vw;
-	}
-/*------------------------------Prior & Next Button---------------------------------------*/
-	.next{
-		width: 60vw;
-	}
-
-	.prior{
-		width: 60vw;
-		margin-bottom: 1.5em;
-	}
-
-	.prior:hover{
-		transform: scale(1.1);
-		
-	}
-	.next:hover{
-		transform: scale(1.1);
-	}
-
-	.p-buttons {
-    margin-top: 7em;
-    margin-left: 1em;
-	}
-
-	.p_info h1 {
-    font-size: 6vw;
-     margin-bottom: 1.5em; 
+.link-group-contact1{
+	color: #ff9800;
+    display: table-caption;
+    text-decoration: none;
+    margin-top: 1em;
+    line-height: 25px;
 }
-	}
+
+.me{
+	display: none;
+}
+
+	.mini_info1 {
+    display: grid;
+    grid-template-columns: 90vw;
+    margin-top: -20vw;
+}
+/*------------------------------Prior & Next Button---------------------------------------*/
+.next{
+	width: 60vw;
+}
+
+.prior{
+	width: 60vw;
+	margin-bottom: 1.5em;
+}
+
+.prior:hover{
+	transform: scale(1.1);
+	
+}
+.next:hover{
+	transform: scale(1.1);
+}
+
+.p-buttons {
+	margin-top: 7em;
+	margin-left: 1em;
+}
+
+.p_info h1 {
+	font-size: 6vw;
+ 	margin-bottom: 1.5em; 
+}
+
 /*----------------------------Email----------------------------*/
 
 .email{
+
 	font-size: 18px;
 	color: #ff9800;
 	text-decoration:none;
+}
+
+.email p{
+	width: 13em;
+}
+
+.email p:hover{
+	filter: saturate(0%);
+	cursor: pointer;
+
 }
 
 /*----------------------------Footer----------------------------*/
@@ -773,7 +803,7 @@ footer{
 
 	}
 
-/*	.right a{
+	/*	.right a{
 		display: block;
     	color: #ff9f10;
     	font-size: 18px;
@@ -823,12 +853,12 @@ footer{
 
 	.about_me .grid {
 		display: grid;
-	    grid-template-columns: 17em 31vw;
+		grid-template-columns: 28vw 31vw;
 	    grid-column-gap: 0vw;
 	}
 
 	.me{
-		width: 21em;
+		width: 33vw;
 	}
 
 	.col1 {
@@ -839,8 +869,8 @@ footer{
     display: grid;
     grid-template-columns: 17em;
     margin-top: -7em;
-}
-/*------------------*/
+	}
+	/*------------------*/
 	.about_me p{
 		font-size: 1.8vw;
 	}
@@ -850,8 +880,15 @@ footer{
 	}
 
 	.email{
-		font-size: 20px;
+	font-size: 20px;
+	color: #ff9800;
+	text-decoration:none;
 	}
+
+	.email:hover{
+	filter: saturate(80%);
+	}
+
 
 	/*----------Project--------*/
 
@@ -868,8 +905,6 @@ footer{
 	}
 
 	.portfolio{
-/*		margin-top: 8px;
-		margin-left: 14px*/
 		filter: saturate(116%);
 	}
 
@@ -882,16 +917,14 @@ footer{
 	}
 
 	.next{
-		width: 18.35em;
+		width: 18.2em;
 	}
 
 	.prior{
-		width: 18.35em;
-		margin-right: 3em;
+		width: 18.2em;
+		margin-right: 2.7em;
 		margin-bottom: 0em;
 	}
-
-}
 
 	footer{
 		font-size: 14px;
@@ -901,11 +934,6 @@ footer{
 /*-----------------------------------------------1080px--------------------------------------------------*/
 @media screen and (min-width: 1080px) {
 
-/*	.right{
-		margin-right: 2.5em;
-		width: 250px;
-	}*/
-
 	.section_1 h3{
 	font-style: italic;
 	font-family: 'Montserrat', sans-serif;
@@ -914,26 +942,26 @@ footer{
 	line-height: 0px;
 	text-align: unset;
 
-}
-.section_1 i{
-	font-family: 'Bodoni Moda', serif;
-	font-weight: 400;
-}
+	}
+	.section_1 i{
+		font-family: 'Bodoni Moda', serif;
+		font-weight: 400;
+	}
 
-.section_1 h1{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 186px;
-	line-height: 10px;
-}
+	.section_1 h1{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 186px;
+		line-height: 10px;
+	}
 
-.section_1 h2{
-	font-family: 'Bodoni Moda', serif;
-	font-weight: 400;
-	font-size: 186px;
-	line-height: 0px;
-}
+	.section_1 h2{
+		font-family: 'Bodoni Moda', serif;
+		font-weight: 400;
+		font-size: 186px;
+		line-height: 0px;
+	}
 
 	.project_mobile h1{
 		font-size: 110px;
@@ -945,31 +973,24 @@ footer{
 	}
 
 	.mini_info h1{
-		font-size: 140px;
+		font-size: 8.35em;
 	}
 
 	.mini_info i{
-		font-size: 120px;
+		font-size: 1em;
 	}
 
 	.mini_info h3 {
     	font-size: 90px;
 	}
 
+	.mini_info1{
+		margin-top: -10em;
+	}
+
 	.about_me {
-    	margin-top: -200px;
+    	margin-top: -11em;
 	}
-
-	.about_me .grid {
-		display: grid;
-	    grid-template-columns: 29vw 31vw;
-	    grid-column-gap: 0vw;
-	}
-
-	.me{
-		width: 33vw;
-	}
-
 
 }
 
