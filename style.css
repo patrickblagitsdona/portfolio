@@ -187,7 +187,7 @@ button a{
 
 .home-projects button {
     color: #ffffff;
-    width: 9.5rem;
+    width: 10rem;
     height: 2.5rem;
     margin-top: 0.5em;
     border-radius: 12px;
@@ -697,7 +697,7 @@ transform: rotate(-43deg);
 	height: 40vw;
 	background-color: #ffffff;
 	background-size: cover;
-	background-image: url(img/HK-ferry2.jpg);
+	background-image: url(img/hk-ferry2.jpg);
 }
 
 .container-center{
