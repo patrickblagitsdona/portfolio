@@ -56,7 +56,9 @@ body{
 }*/
 
 
-
+.number{
+	display: none;
+}
 
 .left{
 	display: block;
@@ -1634,6 +1636,11 @@ footer{
 
 /*------------------------------500px---------------------------------------*/
 @media screen and (min-width: 500px) {
+	
+	.number{
+		display:block;
+	}
+	
 
 	.mini_info1{
 		font-size: 1.25em;
